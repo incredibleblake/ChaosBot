@@ -9,7 +9,7 @@ module.exports = {
   execute(client, message, args) {
 
     if (!args[1]) return message.reply("please ask a full question");
-    let replies = ["yeah i think so", "im hungry rn ask me in like five min", "pfff im not going to tell you that LOL", "idk man", "what?", "idk man i wouldnt count on that", "oh yeah definitely", "for sure"];
+    let replies = ["As I see it, yes.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", "Don't count on it.", "It is certain.", "It is decidedly so."];
 
     let result = Math.floor((Math.random() * replies.length));
     let question = args.slice(1).join(" ");
